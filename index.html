@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ich lerne Deutch</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="header-logo">Ich lerne...</a>
+        <nav class="header_nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
+                <rect width="24" height="3" fill="white"></rect>
+                <rect y="7" width="24" height="3" fill="white"></rect>
+                <rect y="14" width="24" height="3" fill="white"></rect>
+            </svg>
+            <button class="header_nav-button">Teori</button>
+            <button class="header_nav-button">Game</button>
+            <button class="header_nav-button">Resorse</button>
+            <button class="header_nav-button">KOntaks</button>
+        </nav>
+    </header>
+    <section class="starkenVerben">
+        <h1 class="starkenVerben_text"><span id="nummer"></span>. Дієслово <span id="infinitive"></span> змінює корневу гласну за принципом <span id="changeLeters"></span> перекладається як <span id="translate1"></span> або <span id="translate2"></span>,
+            має форму третьої особи <span id="firstLettersthirdPerson"></span><span id="thirdPersonChangeLetter"></span><span id="thirdPerson"></span>,
+             форму для Präteritum <span id="firstLetters"></span><span id="preteritumChangeLetter"></span><span id="preteritum"></span>,
+              форму для Perfect <span id="firstLettersPerfect"></span><span id="perfectChangeLetter"></span><span id="perfect"></span>,  
+              та його треба знати на рівні володіння мови <span id="level"></span>
+        </h1>
+        <div class="starkenVerben_box">
+            <div class="starkenVerben_buttonBox">
+                <button class="starkenVerben_buttonBox-btn" id="btnPreviousVerb">Previous</button>
+                <button class="starkenVerben_buttonBox-btn" id="btnRandomVerb">Random</button>
+                <button class="starkenVerben_buttonBox-btn" id="btNnextVerb">Next</button>
+                <button class="starkenVerben_buttonBox-btn" id="btnSetting">setting</button>
+            </div>
+            
+            <div class="starkenVerben_settings">
+                <div class="starkenVerben_settings-verbLevel">
+                    <label for="levelA1" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelA1" name="levelA1" value="A1" class="starkenVerben_settings-levelInput" checked>
+                        <span class="starkenVerben_settings-levelText">A1</span>
+                    </label>
+                    <label for="levelA2" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelA2" name="levelA2" value="A2" class="starkenVerben_settings-levelInput" checked>
+                        <span class="starkenVerben_settings-levelText">A2</span>
+                    </label>
+                    <label for="levelB1" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelB1" name="levelB1" value="B1" class="starkenVerben_settings-levelInput" checked>
+                        <span class="starkenVerben_settings-levelText">B1</span>
+                    </label>
+                    <label for="levelB2" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelB2" name="levelB2" value="B2" class="starkenVerben_settings-levelInput">
+                        <span class="starkenVerben_settings-levelText">B2</span>
+                    </label>
+                    <label for="levelC1" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelC1" name="levelC1" value="C1" class="starkenVerben_settings-levelInput">
+                        <span class="starkenVerben_settings-levelText">C1</span>
+                    </label>
+                    <label for="levelC2" class="starkenVerben_settings-levelLabel">
+                        <input type="checkbox" id="levelC2" name="levelC2" value="C2" class="starkenVerben_settings-levelInput">
+                        <span class="starkenVerben_settings-levelText">C2</span>                        
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="./js/starkenVerben.js"></script>
+</body>
+</html>
